@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+}
+body {
+  background-color: #f7e9dc;
+}
+.container {
+  padding: 20px 25px;
+  width: 30%;
+  border-radius: 15px;
+}
+.evaluation-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/*           card header          */
+.card-header {
+  color: white;
+  background-color: #ec755d;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.balance-part p {
+  margin-bottom: 7px;
+}
+.logo img {
+  width: 60px;
+}
+/*           card body           */
+.card-body {
+  background-color: #fffcf7;
+}
+.card-body h2,
+.chart-details h1 {
+  color: #372516;
+}
+.card-body-footer {
+  margin-top: 10px;
+  border-top: 2px solid #f7e9dc;
+  padding-top: 25px;
+}
+.card-body-footer p,
+.chart-part ul li {
+  color: #beb5ae;
+  font-size: 13px;
+}
+.chart-details {
+  display: flex;
+  justify-content: space-between;
+}
+.month-details p:nth-child(1) {
+  color: #372516;
+  font-weight: bold;
+  text-align: end;
+}
+p.amount-details {
+  display: none;
+  background-color: #392315;
+  color: white;
+  margin-bottom: 10px;
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.day-amount-chart {
+  width: 40px;
+  border-radius: 5px;
+  background-color: #ec755d;
+}
+.day-amount-chart:hover {
+  opacity: 0.5;
+  cursor: grabbing;
+}
+ul.chart-day-list:hover .amount-details {
+  display: block;
+}
+.chart-part div:nth-child(3) ul.chart-day-list .day-amount-chart {
+  background-color: #b4dfe5;
+}
+.chart-part {
+  display: flex;
+  justify-content: space-around;
+  height: 160px;
+  align-items: flex-end;
+}
+.chart-day-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chart-day-list li {
+  margin-top: 5px;
+}
+/*           Meadia Queries           */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+      }
+      .day-amount-chart {
+        width: 30px;
+      }
+      .card-body h2,
+      .chart-details h1 {
+        font-size: 19px;
+      }
+      .card-header {
+        font-size: 12px;
+      }
+ }
+
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 50%;
+      }
+ }
+ @media only screen and (min-width: 768px){
+
+ }
+ @media only screen and (min-width: 992px){
+    
+}
+@media only screen and (min-width: 1200px) {
+     .container {
+    width: 30%;
+  }}
+
+
+
