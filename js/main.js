@@ -1,4 +1,3 @@
-console.log("its work");
 fetch('/data.json')
 .then(function (response) {
     return response.json();
