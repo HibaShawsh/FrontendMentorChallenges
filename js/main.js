@@ -1,4 +1,4 @@
-fetch('/data.json')
+fetch('/FrontendMentorChallenges/data.json')
 .then(function (response) {
     return response.json();
 })
